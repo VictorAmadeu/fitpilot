@@ -1,3 +1,15 @@
 spring:
   application:
     name: fitpilot-api
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/fitpilot}
+    username: ${DB_USERNAME:fitpilot}
+    password: ${DB_PASSWORD:fitpilot_dev_only}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
