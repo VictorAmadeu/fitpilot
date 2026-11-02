@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: fitpilot-api
@@ -8,6 +9,7 @@ spring:
     password: ${DB_PASSWORD:fitpilot_dev_only}
 
   jpa:
+    open-in-view: false
     hibernate:
       ddl-auto: validate
 
